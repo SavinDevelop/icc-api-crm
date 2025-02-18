@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from datetime import datetime
-from turtle import title
 
 from sqlalchemy import Integer, Text, DateTime, ForeignKey
 from sqlalchemy.orm import mapped_column, Mapped, relationship
@@ -20,7 +19,6 @@ class Order(Base):
     work_id: Mapped[int] = mapped_column(ForeignKey("order_work.id"))
     work: Mapped["Work"] = relationship(back_populates="orders")
 
-
     date_created: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(datetime.timezone.utc))
     date_updated: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(datetime.timezone.utc), onupdate=lambda: datetime.now(datetime.timezone.utc))
 
@@ -34,7 +32,6 @@ class Comment(Base):
     order: Mapped["Order"] = relationship(back_populates="comment")
 
     status_history: Mapped[list["OrderStatusHistory"]] = relationship(back_populates="order", cascade="all, delete-orphan")
-
 
     date_created: Mapped[datetime] = mapped_column(DateTime, default=lambda: datetime.now(datetime.timezone.utc))
     
