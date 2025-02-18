@@ -6,8 +6,8 @@ router = APIRouter(prefix="/auth")
 @router.post("/login")
 async def login(): pass
 
-@router.refresh("/refresh")
+@router.post("/refresh")
 async def refresh(): pass
 
-@router.post("/logout")
+@router.delete("/logout")
 async def logout(): pass
