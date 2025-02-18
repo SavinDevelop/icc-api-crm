@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-@router.get("/user", response_model=list[str])
+@router.get("/users", response_model=list[str])
 async def get_list_users(): pass
 
 @router.get("/user/{email}", response_model=str)
