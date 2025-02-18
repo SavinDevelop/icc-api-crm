@@ -12,7 +12,7 @@ async def get_user_by_email(): pass
 async def crate_user(): pass
 
 @router.put("/user", response_model=str)
-async def update_user():pass
+async def update_user(): pass
 
 @router.delete("/user")
-async def delete_user():pass
+async def delete_user(): pass
