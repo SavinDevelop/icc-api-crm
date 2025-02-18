@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 .vscode
 
+=======
+>>>>>>> 7ade40585450b157954bb7d3846a626b5ba0cf33
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -100,7 +103,11 @@ ipython_config.py
 #   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
+<<<<<<< HEAD
 uv.lock
+=======
+#uv.lock
+>>>>>>> 7ade40585450b157954bb7d3846a626b5ba0cf33
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
@@ -170,4 +177,8 @@ cython_debug/
 #.idea/
 
 # PyPI configuration file
+<<<<<<< HEAD
 .pypirc
+=======
+.pypirc
+>>>>>>> 7ade40585450b157954bb7d3846a626b5ba0cf33
